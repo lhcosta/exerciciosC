@@ -19,7 +19,7 @@ void selectionSort(int *array, int qtdNum);
 int main(){
 	
 	setlocale(LC_ALL,"Portuguese");
-	
+/*	
 	int i=0,v1[MAX]={0},v2[MAX]={0},v3[MAX]={0};
 	
 	srand(time(NULL));
@@ -40,7 +40,22 @@ int main(){
 	for(i=0;i<MAX;i++){
 		printf("%d %d %d\n", v1[i],v2[i],v3[i]);
 	}
+*/
+
+	int i = 10;
 	
+	while(i > 0){
+		if(i > 5){
+			printf("Lucas\n");
+			i--;
+		}else{
+			i--;
+			continue;
+			printf("Costa\n");
+		}
+	}
+	
+		
 	
 	return 0;
 }
