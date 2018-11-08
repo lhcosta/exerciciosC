@@ -34,7 +34,10 @@ void criarLista(Descritor **lista)
 int inserirElemento(Descritor *lista, int valor)
 {	
 	Elemento *novo = (Elemento *) malloc(sizeof(Elemento));
-
+	
+	//Quantidade de Elementos na lista
+	lista->tamanho += 1;
+	
     if(novo!=NULL){
     	novo->dado = valor;
 	}
@@ -72,6 +75,7 @@ int inserirElemento(Descritor *lista, int valor)
 	aux->ant->prox = novo;
 	aux->ant = novo;
 	novo->prox = aux;
+	
 	
     return 1;
    	

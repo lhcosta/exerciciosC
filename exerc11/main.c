@@ -31,7 +31,8 @@ int main()
             break;
         case 2:
             /* imprimir lista completa */
-            imprimirLista(lista);getch();system("cls");
+            imprimirLista(lista);
+            printf("Tamanho da Lista -> %d Elementos\n", lista->tamanho);getch();system("cls");
             break;
         case 3:
             /* buscar um elemento da lista */
